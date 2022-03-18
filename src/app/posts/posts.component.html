@@ -1,0 +1,19 @@
+<form [formGroup]="myForm" (ngSubmit)="createPost(myForm.value)">
+  <div>
+    <label for="userId">User ID</label>
+    <input id="userId" type="text" formControlName="userId" />
+  </div>
+  <div>
+    <label for="title">Title</label>
+    <input id="title" type="text" formControlName="title" />
+  </div>
+  <div>
+    <label for="body">Body</label>
+    <input id="body" type="text" formControlName="body" />
+  </div>
+  <input type="submit" />
+</form>
+<!-- getting data from server -->
+<ul *ngFor="let post of posts">
+  <li>{{ post.title }}</li>
+</ul>
