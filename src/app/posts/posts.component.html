@@ -15,5 +15,7 @@
 </form>
 <!-- getting data from server -->
 <ul *ngFor="let post of posts">
-  <li>{{ post.title }}</li>
+  <li>
+    <button (click)="deletePost(post.id)">Delete</button> {{ post.title }}
+  </li>
 </ul>
