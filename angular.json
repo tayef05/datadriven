@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "datadriven:build:production",
+            "firebaseProject": "datadriven-dcbbf",
+            "firebaseHostingSite": "datadriven-dcbbf"
+          }
         }
       }
     }
